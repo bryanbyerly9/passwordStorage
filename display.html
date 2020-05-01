@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+    </head>
+    <body>
+        <label id="loginLabel">Not Logged In</label>
+        <br>
+        <label>Username:</label>
+        <input type="text" id="user"></input>
+        <br>
+        <label>Password:</label>
+        <input type="text" id="pass"></input>
+        <br>
+        <button onclick="verifyID()">Login</button>
+        <button onclick="createAccount()">Create Account</button>
+        <button onclick="retrieveAccounts()">get accounts</button>
+        <br>
+        <table id='loginTable' width='75%' style='border:solid'>
+            <tr>
+                <thead>
+                    <th>Account Type</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                </thead>
+            </tr>
+        </table>
+        <label>Name:</label>
+        <input type="text" id="addName"></input>
+        <label>Username:</label>
+        <input type="text" id="addUser"></input>
+        <label>Password:</label>
+        <input type="text" id="addPass"></input>
+        <button onclick="addAccount()">Add Account</button>
+        <br>
+        <label>Delete Account:</label>
+        <input type="text" id="delName"></input>
+        <button onclick="delAccount()">Delete Account</button>
+        <script src="client.js"></script>
+    </body>
+</html>
